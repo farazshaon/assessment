@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assessment</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!--Nav toggle bar-->
+    <input type="checkbox" id="nav-toggle">
+
+    <!--SideBar Nav-->
+      <div class="sidebar">
+        <div class="sidebar-brand">
+          <a href=""><img src="images/logo.png" alt=""></a>
+        </div>
+        <div class="sidebar-menu">
+          <nav>
+          	<ul>
+          		<li>
+                <a href='#'> <span> <img src="images/deshbord-icon.png" alt=""></span> Dashboard</a>
+              </li>
+              <li>
+                <a href='#'><span><img src="images/lookup-icon.png" alt=""> </span> Lookup </a>
+              </li>
+              <li>
+                <a href='#'><span><img src="images/files-icon.png" alt=""></span> Files </a>
+              </li>
+          		<li class='sub-menu'><a href='#'><span><img src="images/logs-icon.png" alt=""></span> Logs<div class='fa fa-caret-down right'></div></a>
+          			<ul>
+          				<li>
+                    <a href='#'> <span> <img src="images/single.png" alt=""> </span> Single/Bulk Lookup </a>
+                  </li>
+          				<li>
+                    <a href='#'> <span> <img src="images/dely-icon.png" alt=""> </span> Daily Usages </a>
+                  </li>
+          			</ul>
+          		</li>
+
+              <li class="menu-border">
+                 <a href='#'> <span> <img src="images/buy-icon.png" alt=""> </span> Buy Credits </a>
+               </li>
+              <li>
+                <a href='#'> <span>  <img src="images/intergrations-icon.png" alt=""> </span> Integrations </a>
+              </li>
+              <li>
+                <a href='#'>  <span>  <img src="images/my-profile-icon.png" alt=""> </span> My Profile </a>
+              </li>
+          	</ul>
+          </nav>
+        </div>
+      </div>
+
+<div class="main-content">
+  <!--Header -->
+  <header>
+    <!--nav toggole-->
+    <div class="header-title">
+      
+        <label for="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+    </div>
+
+<!--My Profile-->
+    <div class="user-wrapper">
+      <div class="balance">
+        <p>Balance : <span> $125</span></p>
+      </div>
+        <nav>
+          <div class="user_profile" onclick="toggleMenu()">
+            <img src="images/user.png" alt="" class="user-pic" >
+              <p>Alexa Jui <span> <i class="fa-solid fa-angle-down"></i> </span> </p>
+          </div>
+          <div class="sub-menu-wrap" id="subMenu">
+            <div class="user-sub-menu">
+              <div class="user-info">
+                  <ul>
+                    <li>
+                      <a href="" class="sub-menu-link">My Profile</a>
+                    </li>
+                    <li>
+                      <a href="" class="sub-menu-link">Add Fund</a>
+                    </li>
+                    <li>
+                      <a href="" class="sub-menu-link">API Documentation</a>
+                    </li>
+                    <li>
+                      <a href="" class="sub-menu-link">Log Out</a>
+                    </li>
+                  </ul>
+                    <a href="" class="btn-loagout"> <img src="images/log-out-Regular.png" alt=""> Log Out</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </div>
+  </header>
+
+<!--DeshBoard-->
+  <main>
+    <div class="grid">
+      <!--Profile Card-->
+          <div class="profile-card">
+            <div class="profile-info">
+              <img src="images/unsplash_6W4F62sN_yI.png" alt="">
+              <h4>Alexa Jui</h4>
+              <p>alexajui@gmail.com</p>
+              <p>+1 354 785 4125</p>
+              <p>3213 D Street, Columbus, USA</p>
+            </div>
+          </div>
+
+      <!-- Credit Cards -->
+    <div class="credit-card">
+      <h4 class="credit-card-title">Your Credit Cards</h4>
+      <div class="cards">
+        <div class="card-single">
+          <div >
+            <h2>Credit Card 1</h2>
+            <p>xxxxxxxxxxxx4684</p>
+          </div>
+          <div >
+            <span>
+              <img src="images/delete-icon.png" alt="">
+            </span>
+          </div>
+        </div>
+        <div class="card-single">
+          <div >
+            <h2>Credit Card 2</h2>
+            <p>xxxxxxxxxxxx4242</p>
+          </div>
+          <div >
+            <span>
+              <img src="images/delete-icon2.png" alt="">
+            </span>
+          </div>
+        </div>
+        <div class="card-single">
+          <div >
+            <h2>Credit Card 3</h2>
+            <p>xxxxxxxxxxxx1254</p>
+          </div>
+          <div >
+            <span>
+              <img src="images/delete-icon.png" alt="">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Tab Nav Bar-->
+    <div class="nav-bar__tab">
+        <div class="tabs">
+        <input type="radio" name="tab" id="tab1" >
+        <label for="tab1" class="tab-label">Update Profile</label>
+        <input type="radio" name="tab" id="tab2">
+        <label for="tab2" class="tab-label">Change Password</label>
+        <input type="radio" name="tab" id="tab3" checked="checked">
+        <label for="tab3" class="tab-label">Email Notifications</label>
+        <input type="radio" name="tab" id="tab4">
+        <label for="tab4" class="tab-label">Auto Recharge Settings</label>
+
+        <div class="tab-content-wrapper">
+          <div id="tab-content-1" class="tab-content">
+
+          </div>
+          <div id="tab-content-2" class="tab-content">
+
+          </div>
+          <div id="tab-content-3" class="tab-content">
+            <div class="switch-check">
+              <input type="checkbox" />
+              <label> Notify me when list verification completes</label>
+            </div>
+
+            <div class="switch-check-2">
+              <input type="checkbox" />
+              <label>Notify me when list export completes</label>
+            </div>
+            <div class="switch-check">
+              <input type="checkbox" />
+              <label>Notify me when list verification result is about to expire</label>
+            </div>
+
+            <hr class="border">
+
+            <div class="switch-check">
+              <input type="checkbox" />
+              <label>Receive Low Credits Email</label>
+            </div>
+
+            <form>
+              <div class="form-row">
+                <div class="">
+                  <label class="form-label">Email address <span>*</span> </label>
+                  <input type="email" class="form-control"  placeholder="alexajui@gmail.com">
+                </div>
+                <div class="">
+                  <label  class="form-label">When credits are less than <span>*</span> </label>
+                  <input type="email" class="form-control form-control-2"  placeholder="50">
+                </div>
+              </div>
+                <hr class="border">
+              <button type="button" class="submit-btn" name="button">Save Changes</button>
+            </form>
+
+          </div>
+          <div id="tab-content-4" class="tab-content">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div> <!--End main-content-->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/app.js"></script>
+  </body>
+</html>
